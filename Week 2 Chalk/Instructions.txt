@@ -1,0 +1,13 @@
+- Create a new folder, open it in VS Code
+
+- run 'npm init'
+
+-Run 'tsc --init'
+
+-Add './src/' to tsconfig.json - rootDir
+
+-Add './dist/' to tscconfig.json - outDir
+
+-create Index.ts in src folder
+
+-run 'tsc -build'
