@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Todo } from './todo';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'To-Do';
+
+  todos: Todo[] = [];
+
+  constructor(){
+    this.todos.push(new Todo("Complete this task", false));
+    this.todos.push(new Todo("Add support for adding todos", false));
+  }
+
+  title = 'ToDo Application';
+
 }
